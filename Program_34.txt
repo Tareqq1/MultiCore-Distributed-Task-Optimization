@@ -1,0 +1,12 @@
+semWait userInput
+assign a input
+semSignal userInput
+semWait file
+assign b readFile a
+semSignal file
+semWait file
+writeFile "backup.txt" b
+semSignal file
+semWait userOutput
+print "Backup created"
+semSignal userOutput

@@ -1,0 +1,8 @@
+semWait userInput
+assign p input
+assign q input
+semSignal userInput
+semWait userOutput
+print p
+print q
+semSignal userOutput

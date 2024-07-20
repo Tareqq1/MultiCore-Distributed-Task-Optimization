@@ -1,0 +1,10 @@
+semWait userInput
+assign a input
+assign b input
+semSignal userInput
+semWait file
+writeFile "values.txt" a b
+semSignal file
+semWait userOutput
+print "Values saved"
+semSignal userOutput

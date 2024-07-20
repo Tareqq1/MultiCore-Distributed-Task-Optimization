@@ -1,0 +1,10 @@
+semWait userInput
+assign temp1 input
+assign temp2 input
+semSignal userInput
+semWait file
+writeFile temp1 temp2
+semSignal file
+semWait userOutput
+printFromTo temp1 temp2
+semSignal userOutput

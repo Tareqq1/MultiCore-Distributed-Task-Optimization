@@ -1,0 +1,9 @@
+semWait userInput
+assign a input
+semSignal userInput
+semWait file
+assign b readFile "file.txt"
+semSignal file
+semWait userOutput
+print a, b
+semSignal userOutput

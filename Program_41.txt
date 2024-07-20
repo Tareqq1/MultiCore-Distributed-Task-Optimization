@@ -1,0 +1,11 @@
+semWait userInput
+assign a input
+assign b input
+assign c input
+semSignal userInput
+semWait file
+writeFile "multi.txt" a b c
+semSignal file
+semWait userOutput
+print "Multiple values written"
+semSignal userOutput

@@ -1,0 +1,7 @@
+semWait userInput
+assign a input
+assign b input
+semSignal userInput
+semWait userOutput
+print "Values are ", a, " and ", b
+semSignal userOutput

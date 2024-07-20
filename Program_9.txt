@@ -1,0 +1,6 @@
+semWait userInput
+assign a readFile dataFile
+semSignal userInput
+semWait userOutput
+print a
+semSignal userOutput

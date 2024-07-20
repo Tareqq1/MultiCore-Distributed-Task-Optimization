@@ -1,0 +1,9 @@
+semWait userInput
+assign k1 input
+semSignal userInput
+semWait file
+assign l1 readFile k1
+semSignal file
+semWait userOutput
+print l1
+semSignal userOutput

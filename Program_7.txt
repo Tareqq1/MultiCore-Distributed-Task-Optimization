@@ -1,0 +1,10 @@
+semWait file
+assign f readFile config
+semSignal file
+semWait userInput
+assign d input
+semSignal userInput
+semWait userOutput
+print d
+print f
+semSignal userOutput
